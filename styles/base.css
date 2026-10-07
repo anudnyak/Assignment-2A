@@ -824,48 +824,55 @@ header.hero {
   grid-row: 2 / 3;
 }
 
-  /* ######### 10a-ii. Navigation, Large screen rules ######### */
-  .navWrap {
-  }
+/* ######### 10a-ii. Navigation, Large screen rules ######### */
+.navWrap {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 100px minmax(auto, 1100px);
+  height: auto;
+}
 
-  .navToggleLabel {
-    display: none;
-  }
+.navToggleLabel {
+  display: none;
+}
 
-  nav {
-    position: initial;
-  }
+nav {
+  position: initial;
+}
 
-  nav ul {
-  }
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 
-  nav ul li a {
-    border-bottom: none;
-  }
+nav ul li a {
+  border-bottom: none;
+}
 
-  nav ul li a:hover {
-    background: transparent;
-  }
+nav ul li a:hover {
+  background: transparent;
+}
 
-  nav::after,
-  nav ul li:last-of-type::before {
-    display: none;
-    padding: initial;
-  }
+nav::after,
+nav ul li:last-of-type::before {
+  display: none;
+  padding: initial;
+}
 
-  nav .btn {
-    width: auto;
-    background: #13b1e7;
-    color: #fff;
-    letter-spacing: normal;
-    text-shadow: none;
-    box-shadow: none;
-  }
+nav .btn {
+  width: auto;
+  background: #13b1e7;
+  color: #fff;
+  letter-spacing: normal;
+  text-shadow: none;
+  box-shadow: none;
+}
 
-  nav.btn:hover {
-    box-shadow: inset 0 0 5px #13b1e7;
-    background-color: #223054;
-  }
+nav.btn:hover {
+  box-shadow: inset 0 0 5px #13b1e7;
+  background-color: #223054;
+}
 
   /* ######### 10a-iiI. Trips, Large screen rules ######### */
   .tripList {
