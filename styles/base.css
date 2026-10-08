@@ -440,7 +440,9 @@ nav .btn:hover {
 .teamMembers img {
   border-radius: 50%;
   width: 80%;
-  box-shadow: 1px 1px 3px #fff, 2px 2px 6px rgb(28 121 138 / 50%);
+  box-shadow:
+    1px 1px 3px #fff,
+    2px 2px 6px rgb(28 121 138 / 50%);
   border: solid 2px rgba(255, 255, 255, 0.8);
 }
 
@@ -658,7 +660,8 @@ form#contactForm {
 }
 
 .contactForm input[type="submit"]:active {
-  box-shadow: 1px 1px 6px rgba(255, 255, 255, 0.6),
+  box-shadow:
+    1px 1px 6px rgba(255, 255, 255, 0.6),
     0px 0px 4px rgba(255, 255, 255, 0.8);
 }
 
@@ -703,7 +706,10 @@ input[type="checkbox"]:checked ~ span:before {
 .contactForm input:focus,
 .contactForm textarea:focus {
   border: solid 1px #13b1e7;
-  box-shadow: 0 0 2px #0d92bf, 0px 0px 4px #0d92bf, 1px 1px 4px #13b1e7,
+  box-shadow:
+    0 0 2px #0d92bf,
+    0px 0px 4px #0d92bf,
+    1px 1px 4px #13b1e7,
     2px 2px 4px #13b1e7;
   outline: none;
 }
@@ -751,7 +757,6 @@ input[type="radio"]:checked ~ span:before {
 }
 
 /*  ########### Note viewers, I am going to place all of our new code for the 05_03 lecture here, in between these new code start/end comments. I will end up deleting these comments once we hvae finished. I just want you to be clear on what is different compared with what we had before :) ########### */
-
 
 /* ######### 9b. Footer > Connect ######### */
 .social,
@@ -811,103 +816,103 @@ input[type="radio"]:checked ~ span:before {
 /* ############ 10a. Media Query, (min-width: 700px) ############ */
 @media screen and (min-width: 700px) {
   /* ######### 10a-i. HERO, Large screen rules ######### */
-header.hero {
-  background: url(../images/header1_lg.jpg) no-repeat center left;
-  background-size: cover;
-  text-align: left;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 0.25fr 1fr 0.25fr;
-  align-items: center;
-}
+  header.hero {
+    background: url(../images/header1_lg.jpg) no-repeat center left;
+    background-size: cover;
+    text-align: left;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 0.25fr 1fr 0.25fr;
+    align-items: center;
+  }
 
-.hero img {
-  margin: 0 0 0 auto;
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-}
+  .hero img {
+    margin: 0 0 0 auto;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
 
-.hero article {
-  max-width: 1000px;
-  grid-column: 3 / 6;
-  grid-row: 2 / 3;
-}
+  .hero article {
+    max-width: 1000px;
+    grid-column: 3 / 6;
+    grid-row: 2 / 3;
+  }
 
-/* ######### 10a-ii. Navigation, Large screen rules ######### */
-.navWrap {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: 100px minmax(auto, 1100px);
-  height: auto;
-}
+  /* ######### 10a-ii. Navigation, Large screen rules ######### */
+  .navWrap {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 100px minmax(auto, 1100px);
+    height: auto;
+  }
 
-.navToggleLabel {
-  display: none;
-}
+  .navToggleLabel {
+    display: none;
+  }
 
-nav {
-  position: initial;
-}
+  nav {
+    position: initial;
+  }
 
-nav ul {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
 
-nav ul li a {
-  border-bottom: none;
-}
+  nav ul li a {
+    border-bottom: none;
+  }
 
-nav ul li a:hover {
-  background: transparent;
-}
+  nav ul li a:hover {
+    background: transparent;
+  }
 
-nav::after,
-nav ul li:last-of-type::before {
-  display: none;
-  padding: initial;
-}
+  nav::after,
+  nav ul li:last-of-type::before {
+    display: none;
+    padding: initial;
+  }
 
-nav .btn {
-  width: auto;
-  background: #13b1e7;
-  color: #fff;
-  letter-spacing: normal;
-  text-shadow: none;
-  box-shadow: none;
-}
+  nav .btn {
+    width: auto;
+    background: #13b1e7;
+    color: #fff;
+    letter-spacing: normal;
+    text-shadow: none;
+    box-shadow: none;
+  }
 
-nav.btn:hover {
-  box-shadow: inset 0 0 5px #13b1e7;
-  background-color: #223054;
-}
+  nav.btn:hover {
+    box-shadow: inset 0 0 5px #13b1e7;
+    background-color: #223054;
+  }
 
-/* ######### 10a-iiI. Trips, Large screen rules ######### */
-.tripList {
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
+  /* ######### 10a-iiI. Trips, Large screen rules ######### */
+  .tripList {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
 
-.trips article {
-  width: 90%;
-  display: flex;
-  align-items: center;
-}
+  .trips article {
+    width: 90%;
+    display: flex;
+    align-items: center;
+  }
 
-.trips h1 {
-  margin: 0 1rem 0 0;
-}
+  .trips h1 {
+    margin: 0 1rem 0 0;
+  }
 
-.trips p {
-  flex: 3;
-}
+  .trips p {
+    flex: 3;
+  }
 
   /* ######### 10a-iv. CTA summaries, Large screen rules ######### */
-.cta {
-  min-height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  .cta {
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   .cta1 {
     background-image: url("../images/ctaBG1_lg.jpg");
@@ -925,225 +930,222 @@ nav.btn:hover {
     margin-right: 1rem;
   }
 
-/* ######### 10a-v. Team, Large screen rules ######### */
-.team {
-  max-width: 1000px;
-  margin: auto;
-  padding: 0 1rem;
-  display: grid;
-  grid-template-columns: 1fr 0.5fr;
-  grid-template-rows: repeat(2, auto);
-}
+  /* ######### 10a-v. Team, Large screen rules ######### */
+  .team {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: repeat(2, auto);
+  }
 
-.team h1 {
-  order: 2;
-  grid-column: 2 / -1;
-  align-self: center;
-}
+  .team h1 {
+    order: 2;
+    grid-column: 2 / -1;
+    align-self: center;
+  }
 
-.teamMembers {
-  order: 1;
-  grid-column: 1 / -1;
-}
+  .teamMembers {
+    order: 1;
+    grid-column: 1 / -1;
+  }
 
-.team p {
-  border-right: solid 1px #dedede;
-  padding-right: 1rem;
-  order: 2;
-}
+  .team p {
+    border-right: solid 1px #dedede;
+    padding-right: 1rem;
+    order: 2;
+  }
 
   /* ######### 10a-vi. Problem, Large screen rules ######### */
-section.problem {
-  background: url(../images/problem1.png) no-repeat center left;
-  max-width: 1200px;
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  align-items: center;
-}
+  section.problem {
+    background: url(../images/problem1.png) no-repeat center left;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+  }
 
-.problem h1 {
-  color: #233458;
-  padding-right: 1rem;
-  text-align: right;
-  text-shadow: 1px 1px 2px #fff;
-  grid-column: 1 / 5;
-}
+  .problem h1 {
+    color: #233458;
+    padding-right: 1rem;
+    text-align: right;
+    text-shadow: 1px 1px 2px #fff;
+    grid-column: 1 / 5;
+  }
 
-.problem h1 ~ p,
-.problem h3,
-.problem ul {
-  grid-column: 5 / -1;
-}
+  .problem h1 ~ p,
+  .problem h3,
+  .problem ul {
+    grid-column: 5 / -1;
+  }
 
-.problem ul {
-  margin-left: 2rem;
-  padding-right: 1rem;
-}
+  .problem ul {
+    margin-left: 2rem;
+    padding-right: 1rem;
+  }
 
-.problem img {
-  display: none;
-}
+  .problem img {
+    display: none;
+  }
 
-/* ######### 10a-vii. Actions, Large screen rules ######### */
-.action {
-  max-width: 1200px;
-  margin: auto;
-}
+  /* ######### 10a-vii. Actions, Large screen rules ######### */
+  .action {
+    max-width: 1200px;
+    margin: auto;
+  }
 
-.action article {
-  margin-bottom: 1rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-}
+  .action article {
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
 
-.action article h1 {
-  text-align: right;
-  margin-right: 1rem;
-}
+  .action article h1 {
+    text-align: right;
+    margin-right: 1rem;
+  }
 
-.action ul {
-  display: flex;
-  flex-wrap: wrap;
-}
+  .action ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-.action ul li {
-  flex-basis: 48%;
-}
+  .action ul li {
+    flex-basis: 48%;
+  }
 
-/* ######### 10a-viii. Footer, Large screen rules ######### */
-footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 0.25fr;
-}
+  /* ######### 10a-viii. Footer, Large screen rules ######### */
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.25fr;
+  }
 
-.contact {
-}
+  .social h3 {
+    border-bottom: none;
+    padding: 0.5rem 1rem 0.5rem 0;
+    text-align: right;
+  }
 
-.social h3 {
-  border-bottom: none;
-  padding: 0.5rem 1rem 0.5rem 0;
-  text-align: right;
-}
+  .social article {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+  }
 
-.social article {
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr 0.5fr;
-}
+  .socialIcons {
+    border-left: solid #fff 1px;
+    font-size: 150%;
+    padding: 0.5rem 0 0.5rem 1rem;
+  }
 
-.socialIcons {
-  border-left: solid #fff 1px;
-  font-size: 150%;
-  padding: 0.5rem 0 0.5rem 1rem;
-}
+  .socialIcons a {
+    display: block;
+  }
 
-.socialIcons a {
-  display: block;
-}
-
-.contactInfo {
-  background-color: #b6e8ff;
-  color: #233156;
-  padding: 1rem 0 0;
-  grid-column: 1 / -1;
-}
+  .contactInfo {
+    background-color: #b6e8ff;
+    color: #233156;
+    padding: 1rem 0 0;
+    grid-column: 1 / -1;
+  }
 }
 
 /* ############ 10b. Media Query, (min-width: 1000px) ############ */
 @media screen and (min-width: 1000px) {
   /* ######### 10b-i. Footer, X-Large screen rules ######### */
-.form {
-  display: grid;
-  grid-template-columns: auto minmax(min-content, 580px);
-  grid-template-areas:
-    ". h"
-    ". p"
-    ". f";
-}
+  .form {
+    display: grid;
+    grid-template-columns: auto minmax(min-content, 580px);
+    grid-template-areas:
+      ". h"
+      ". p"
+      ". f";
+  }
 
-.form h3 {
-  grid-area: h;
-}
+  .form h3 {
+    grid-area: h;
+  }
 
-.form p.formIntro {
-  grid-area: p;
-}
+  .form p.formIntro {
+    grid-area: p;
+  }
 
-/*  ########### NEW CODE START (05_03) ########### */
-form#contactForm {
-  max-width: initial;
-  grid-area: f;
-  display: grid;
-  grid-template-areas:
-    "name ph"
-    "email news"
-    "radio radio"
-    "msg msg"
-    "btn .";
-  grid-gap: 1rem;
-}
+  /*  ########### NEW CODE START (05_03) ########### */
+  form#contactForm {
+    max-width: initial;
+    grid-area: f;
+    display: grid;
+    grid-template-areas:
+      "name ph"
+      "email news"
+      "radio radio"
+      "msg msg"
+      "btn .";
+    grid-gap: 1rem;
+  }
 
-.contactForm div {
-  margin-top: 0;
-}
+  .contactForm div {
+    margin-top: 0;
+  }
 
-.contactForm div:nth-child(1) {
-  grid-area: name;
-}
+  .contactForm div:nth-child(1) {
+    grid-area: name;
+  }
 
-.contactForm div:nth-child(2) {
-  grid-area: ph;
-}
+  .contactForm div:nth-child(2) {
+    grid-area: ph;
+  }
 
-.contactForm div:nth-child(3) {
-  grid-area: email;
-}
+  .contactForm div:nth-child(3) {
+    grid-area: email;
+  }
 
-.contactForm div:nth-child(4) {
-  grid-area: radio;
-}
+  .contactForm div:nth-child(4) {
+    grid-area: radio;
+  }
 
-.contactForm div:nth-child(5) {
-  grid-area: msg;
-}
+  .contactForm div:nth-child(5) {
+    grid-area: msg;
+  }
 
-.contactForm div:nth-child(6) {
-  margin: 1.8rem 0 0;
-  grid-area: news;
-}
+  .contactForm div:nth-child(6) {
+    margin: 1.8rem 0 0;
+    grid-area: news;
+  }
 
-.contactForm button {
-  width: 100%;
-  grid-area: btn;
-}
+  .contactForm button {
+    width: 100%;
+    grid-area: btn;
+  }
 
-.contactForm textarea {
-  max-width: 100%;
-}
+  .contactForm textarea {
+    max-width: 100%;
+  }
 
-/*  ########### NEW CODE END (05_03) ########### */
+  /*  ########### NEW CODE END (05_03) ########### */
 
-.social article {
-  max-width: 580px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+  .social article {
+    max-width: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-.social h3 {
-  text-align: center;
-  padding-right: 0;
-}
+  .social h3 {
+    text-align: center;
+    padding-right: 0;
+  }
 
-.socialIcons {
-  border-left: none;
-  padding-left: 0;
-}
+  .socialIcons {
+    border-left: none;
+    padding-left: 0;
+  }
 
-.socialIcons a {
-  display: inline-block;
-  font-size: 180%;
-}
+  .socialIcons a {
+    display: inline-block;
+    font-size: 180%;
+  }
 }
