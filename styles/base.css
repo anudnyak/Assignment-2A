@@ -1042,39 +1042,46 @@ section.problem {
   flex-basis: 48%;
 }
 
-  /* ######### 10a-viii. Footer, Large screen rules ######### */
-  footer {
-  }
-
-  .contact {
-  }
-
-  .social h3 {
-    border-bottom: none;
-    padding: 0.5rem 1rem 0.5rem 0;
-    text-align: right;
-  }
-
-  .social article {
-    height: 100%;
-  }
-
-  .socialIcons {
-    border-left: solid #fff 1px;
-    font-size: 150%;
-    padding: 0.5rem 0 0.5rem 1rem;
-  }
-
-  .socialIcons a {
-    display: block;
-  }
-
-  .contactInfo {
-    background-color: #b6e8ff;
-    color: #233156;
-    padding: 1rem 0 0;
-  }
+/* ######### 10a-viii. Footer, Large screen rules ######### */
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 0.25fr;
 }
+
+.contact {
+}
+
+.social h3 {
+  border-bottom: none;
+  padding: 0.5rem 1rem 0.5rem 0;
+  text-align: right;
+}
+
+.social article {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+}
+
+.socialIcons {
+  border-left: solid #fff 1px;
+  font-size: 150%;
+  padding: 0.5rem 0 0.5rem 1rem;
+}
+
+.socialIcons a {
+  display: block;
+}
+
+.contactInfo {
+  background-color: #b6e8ff;
+  color: #233156;
+  padding: 1rem 0 0;
+  grid-column: 1 / -1;
+}
+}
+
 /* ############ 10b. Media Query, (min-width: 1000px) ############ */
 @media screen and (min-width: 1000px) {
   /* ######### 10b-i. Footer, X-Large screen rules ######### */
