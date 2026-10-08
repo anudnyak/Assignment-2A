@@ -1007,6 +1007,33 @@ section.problem {
   display: none;
 }
 
+/* ######### 10a-vii. Actions, Large screen rules ######### */
+.action {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.action article {
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.action article h1 {
+  text-align: right;
+  margin-right: 1rem;
+}
+
+.action ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.action ul li {
+  flex-basis: 48%;
+}
+
   /* ######### 10a-viii. Footer, Large screen rules ######### */
   footer {
   }
