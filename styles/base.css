@@ -969,31 +969,36 @@ nav.btn:hover {
 }
 
   /* ######### 10a-vi. Problem, Large screen rules ######### */
-  section.problem {
-    background: url(../images/problem1.png) no-repeat center left;
-    max-width: 1200px;
-  }
+section.problem {
+  background: url(../images/problem1.png) no-repeat center left;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  align-items: center;
+}
 
-  .problem h1 {
-    color: #233458;
-    padding-right: 1rem;
-    text-align: right;
-    text-shadow: 1px 1px 2px #fff;
-  }
+.problem h1 {
+  color: #233458;
+  padding-right: 1rem;
+  text-align: right;
+  text-shadow: 1px 1px 2px #fff;
+  grid-column: 1 / 5;
+}
 
-  .problem h1 ~ p,
-  .problem h3,
-  .problem ul {
-  }
+.problem h1 ~ p,
+.problem h3,
+.problem ul {
+  grid-column: 5 / -1;
+}
 
-  .problem ul {
-    margin-left: 2rem;
-    padding-right: 1rem;
-  }
+.problem ul {
+  margin-left: 2rem;
+  padding-right: 1rem;
+}
 
-  .problem img {
-    display: none;
-  }
+.problem img {
+  display: none;
+}
 
   /* ######### 10a-viii. Footer, Large screen rules ######### */
   footer {
