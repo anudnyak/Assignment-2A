@@ -1085,26 +1085,42 @@ footer {
 /* ############ 10b. Media Query, (min-width: 1000px) ############ */
 @media screen and (min-width: 1000px) {
   /* ######### 10b-i. Footer, X-Large screen rules ######### */
-  .form {
-  }
+.form {
+  display: grid;
+  grid-template-columns: auto minmax(min-content, 580px);
+  grid-template-areas:
+    ". h"
+    ". p";
+}
 
-  .form h3 {
-  }
 
-  .form p.formIntro {
-  }
+.form h3 {
+  grid-area: h;
+}
 
-  .social article {
-    max-width: 580px;
-  }
+.form p.formIntro {
+  grid-area: p;
+}
 
-  .socialIcons {
-    border-left: none;
-    padding-left: 0;
-  }
+.social article {
+  max-width: 580px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-  .socialIcons a {
-    display: inline-block;
-    font-size: 180%;
-  }
+.social h3 {
+  text-align: center;
+  padding-right: 0;
+}
+
+.socialIcons {
+  border-left: none;
+  padding-left: 0;
+}
+
+.socialIcons a {
+  display: inline-block;
+  font-size: 180%;
+}
 }
